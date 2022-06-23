@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:just_another_blogger/screens/home_screen.dart';
 
 import '../../../constants.dart';
 import '../../../widgets/already_have_an_account_acheck.dart';
@@ -46,7 +47,9 @@ class LoginForm extends StatelessWidget {
           Hero(
             tag: "login_btn",
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, MyNavigationBar.routeName);
+              },
               child: Text(
                 "Login".toUpperCase(),
               ),

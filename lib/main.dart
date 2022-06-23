@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:just_another_blogger/constants.dart';
 import 'package:just_another_blogger/screens/Login/login_screen.dart';
 import 'package:just_another_blogger/screens/Signup/signup_screen.dart';
+import 'package:just_another_blogger/screens/home_screen.dart';
 
 import 'screens/Welcome/welcome_screen.dart';
 
@@ -44,7 +45,8 @@ class MyApp extends StatelessWidget {
       routes: {
         WelcomeScreen.routeName: (context) => const WelcomeScreen(),
         LoginScreen.routeName: (context) => const LoginScreen(),
-        SignUpScreen.routeName: (context) => const SignUpScreen()
+        SignUpScreen.routeName: (context) => const SignUpScreen(),
+        MyNavigationBar.routeName: (context) => const MyNavigationBar()
       },
     );
   }
